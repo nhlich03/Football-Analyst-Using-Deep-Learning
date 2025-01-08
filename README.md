@@ -4,7 +4,7 @@
 The goal of this project is detect players, goalkeepers, referees and ball in a video using YOLO. We will train model on custom data to improve performance. 
 Additionally, we will assign players to teams based on the colors of their t-shirts using Kmeans for pixel segmentation and clustering. With this information, we can measure a team's ball acquisition percentage in a match.
 
-![Screenshot_processed_video](img/processed_video.mp4)
+![processed_video](img/processed_video.gif)
 
 ## Data 
 
