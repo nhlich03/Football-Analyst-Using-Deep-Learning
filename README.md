@@ -4,7 +4,7 @@
 
 Football Analyst Using Deep Learning
 Data
-We use data from SoccerNet. The dataset consists of numerous 30-second labeled video clips from football matches. You can find more information about the dataset here: {https://www.soccer-net.org/tasks/game-state-reconstruction}
+We use data from SoccerNet. The dataset consists of numerous 30-second labeled video clips from football matches. You can find more information about the dataset [here](https://www.soccer-net.org/tasks/game-state-reconstruction).
 
 To download the data, you can run the following command:
 '''
