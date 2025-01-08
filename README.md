@@ -6,6 +6,10 @@ Additionally, we will assign players to teams based on the colors of their t-shi
 
 ![processed_video](img/processed_video.gif)
 
+## About the project pipeline
+![processed_video](img/pipeline.png)
+
+
 ## Data 
 
 Football Analyst Using Deep Learning
