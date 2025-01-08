@@ -1,8 +1,5 @@
 # Football-Analyst-Using-Deep-Learning
 
-
-
-
 ## Data 
 
 Football Analyst Using Deep Learning
