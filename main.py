@@ -9,9 +9,7 @@ from utils.video_utils import get_unique_filename
 
 def main():
     # Init
-    video_path =   "video/SNGS-118.mp4"
-    video_path2 = "video/video_MU_30s.avi"
-    video_path2 = "video/video_MU_2s.avi"
+    video_path = "video/video.mp4"
     ball_model_path = "model/ball_model.pt"
     player_model_path = "model/best_yolo8x_model.pt"
     output_video_path = "processed_video.avi"
@@ -34,7 +32,8 @@ def main():
     # Team classification
     team_classifier = TeamClassifier()
     all_player_crops = detection.all_player_crop
-    team_classifier.fit_kmeans(all_player_crops)
+    if all_player_crops:
+        team_classifier.fit_kmeans(all_player_crops)
 
     # Process video with ball possession analysis
     processor_video = ProcessVideo()

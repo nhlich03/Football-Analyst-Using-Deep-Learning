@@ -1,5 +1,9 @@
 # Football-Analyst-Using-Deep-Learning
 
+## Introduction
+The goal of this project is detect players, goalkeepers, referees and ball in a video using YOLO. We will train model on custom data to improve performance. 
+Additionally, we will assign players to teams based on the colors of their t-shirts using Kmeans for pixel segmentation and clustering. With this information, we can measure a team's ball acquisition percentage in a match.
+
 ## Data 
 
 Football Analyst Using Deep Learning
@@ -27,3 +31,8 @@ data/
 ```
 
 Once the data is downloaded, you need to run the [process_data/process_data.ipynb](process_data/process_data.ipynb) notebook to perform sampling and extract the labels necessary for the project.
+
+
+## Train Model 
+
+Chúng tôi sử dụng model YOLOv8x để train 

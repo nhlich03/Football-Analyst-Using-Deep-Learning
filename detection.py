@@ -94,28 +94,33 @@ class Detection:
             if highest_conf_line:  # Ensure there's a line to write
                 output_file.write(highest_conf_line + '\n')
 
-'''
-video_path = "video_MU_2s.avi"
+
+
+'''# Init
+video_path = "video/video.mp4"
 ball_model_path = "model/ball_model.pt"
-player_model_path = "model/player_model.pt"
-yolo_results_dir = os.path.join(os.getcwd(), "yolo_results")
-output_video_path = '/content/output_video_with_possession.avi'
+player_model_path = "model/best_yolo8x_model.pt"
+output_video_path = "processed_video.avi"
+yolo_results_dir = os.path.join(os.getcwd(), "yolo_results", "detection_results")
 
-video_frames = read_video(video_path)
+# Get unique directory and output file name
+yolo_results_dir = get_unique_filename(yolo_results_dir)
+output_video_path = os.path.join(yolo_results_dir, output_video_path)
 
+# Detection
 detection = Detection()
 detection.player_model = YOLO(player_model_path)
 detection.ball_model = YOLO(ball_model_path)
-detection.take_crop = 1
+detection.take_crop = 1  # Save player crop
 
-detection.detect_video(video_frames=video_frames,
-                       output_video_path=yolo_results_dir)
+detection.detect_video(video_path=video_path,
+                        output_results_path=yolo_results_dir)
+print(f"All results saved to: {yolo_results_dir}")
 
 for crop in detection.all_player_crop:
     print(crop)
-    lab = cv2.cvtColor(crop, cv2.COLOR_BGR2LAB)
+    lab = cv2.cvtColor(crop, cv2.COLOR_BGR2LAB)'''
 
 # team_classifier = TeamClassifier()
 # all_player_crops = detection.all_player_crop
 # team_classifier.fit_kmeans(all_player_crops)
-'''

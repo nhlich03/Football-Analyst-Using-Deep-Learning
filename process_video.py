@@ -123,17 +123,19 @@ class ProcessVideo:
 
         # Coordinates
         x = frame.shape[1] - 500
+        y = 50
+        y2 = y + 50
         
+        # Draw a semi-transparent rectaggle 
+        cv2.rectangle(frame, (x-50, y-40), (x+450,y+70), (255,255,255), -1 )
+
         # Vẽ thông tin 2 team 
         cv2.putText(frame, f"Team1 possession: {team1_percent:.1f}%",
-                    (x, 50),  # Adjust y-coordinate for two lines
+                    (x, y), 
                     cv2.FONT_HERSHEY_SIMPLEX, 1, team1_color, 2)
         cv2.putText(frame, f"Team2 possession: {team2_percent:.1f}%",
-                    (x, 100), 
+                    (x, y2), 
                     cv2.FONT_HERSHEY_SIMPLEX, 1, team2_color, 2)
-        cv2.putText(frame, f"Team keeping ball: {team_keeping_ball_number}",
-                    (x - 700, 70), 
-                    cv2.FONT_HERSHEY_SIMPLEX, 1, team_keeping_ball_color, 2)
     
     def assign_ball_player(self, frame, ball_box, team1_players, team2_players, threshold):
         min_distance = float('inf')
