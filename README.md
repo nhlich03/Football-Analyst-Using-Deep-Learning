@@ -26,4 +26,4 @@ data/
       challenge/
 ```
 
-Once the data is downloaded, you need to run the process_data/process_data.ipynb notebook to perform sampling and extract the labels necessary for the project.
+Once the data is downloaded, you need to run the [process_data/process_data.ipynb](process_data/process_data.ipynb) notebook to perform sampling and extract the labels necessary for the project.
