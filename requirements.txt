@@ -1,0 +1,7 @@
+ultralytics
+roboflow
+wandb
+opencv-python
+numpy
+scikit-learn
+pyyaml
