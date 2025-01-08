@@ -4,7 +4,7 @@
 The goal of this project is detect players, goalkeepers, referees and ball in a video using YOLO. We will train model on custom data to improve performance. 
 Additionally, we will assign players to teams based on the colors of their t-shirts using Kmeans for pixel segmentation and clustering. With this information, we can measure a team's ball acquisition percentage in a match.
 
-![Screenshot_processed_video](img/demo.png)
+![Screenshot_processed_video](img/processed_video.mp4)
 
 ## Data 
 
@@ -37,4 +37,11 @@ Once the data is downloaded, you need to run the [process_data/process_data.ipyn
 
 ## Train Model 
 
-Chúng tôi sử dụng model YOLOv8x để train 
+Train lại model bằng data đã chuẩn bị ở phần trước:
+- [Ball detection](training/Ball_detection_yolov11s_50epochs_RoboData.ipynb)
+- [Player, goalkeeper, referee detection detection](training/Detection_yolov8x_50epoch_customData.ipynb)
+
+Hoặc có thể sử dụng model chúng tôi đã train sẵn:
+- [Trained YOLOv8x for ball detection](model/ball_model.pt)
+- [Trained YOLOv8x for player, goalkeeper, referee detection](model/player_model.pt)
+
