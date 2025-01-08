@@ -1,0 +1,18 @@
+# Loại trừ toàn bộ folder
+yolo_results/
+video/
+
+# Loại trừ một file cụ thể
+model/best_yolo8x_model.pt
+model/best_yolo11x_model.pt
+
+# Loại trừ toàn bộ folder con có tên temp
+**/temp/
+
+# Loại trừ file tạm của hệ điều hành
+.DS_Store
+Thumbs.db
+
+# Loại trừ file Python bytecode
+__pycache__/
+*.pyc
