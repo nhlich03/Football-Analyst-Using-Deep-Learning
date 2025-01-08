@@ -6,12 +6,15 @@ Additionally, we will assign players to teams based on the colors of their t-shi
 
 ![processed_video](img/processed_video.gif)
 
-## About the project pipeline
+## Pipeline
 ![processed_video](img/pipeline.png)
+
+The following modules are used in this project: 
+- YOLO: Object detection
+- Kmean: Pixel segmentation and clustering to detect t-shirt color
 
 
 ## Data 
-
 Football Analyst Using Deep Learning
 Data
 We use data from SoccerNet. The dataset consists of numerous 30-second labeled video clips from football matches. You can find more information about the dataset [here](https://www.soccer-net.org/tasks/game-state-reconstruction).
