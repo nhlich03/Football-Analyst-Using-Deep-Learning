@@ -44,11 +44,11 @@ Once the data is downloaded, you need to run the [process_data/process_data.ipyn
 
 ## Train Model 
 
-Train lại model bằng data đã chuẩn bị ở phần trước:
+Retrain the model using the prepared data from the previous section:
 - [Ball detection](training/Ball_detection_yolov11s_50epochs_RoboData.ipynb)
 - [Player, goalkeeper, referee detection detection](training/Detection_yolov8x_50epoch_customData.ipynb)
 
-Hoặc có thể sử dụng model chúng tôi đã train sẵn:
+Alternatively, you can use our pre-trained model: 
 - [Trained YOLOv8x for ball detection](model/ball_model.pt)
 - [Trained YOLOv8x for player, goalkeeper, referee detection](model/player_model.pt)
 
