@@ -16,3 +16,6 @@ Thumbs.db
 # Loại trừ file Python bytecode
 __pycache__/
 *.pyc
+
+# Loại trừ file PDF
+*.pdf
