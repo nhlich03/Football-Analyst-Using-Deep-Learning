@@ -6,8 +6,13 @@ video/
 model/best_yolo8x_model.pt
 model/best_yolo11x_model.pt
 
-# Loại trừ toàn bộ folder con có tên temp
+# Loại trừ tất cả các file và thư mục có tên temp hoặc tmp
+temp/
+tmp/
 **/temp/
+**/tmp/
+temp*
+tmp*
 
 # Loại trừ file tạm của hệ điều hành
 .DS_Store
